@@ -242,7 +242,7 @@ h1 {
             rgba(0,0,0,0.92),
             rgba(0,0,0,0.3)
         ),
-        url("https://images.unsplash.com/photo-1446776877081-d282a0f896e2?auto=format&fit=crop&w=2400&q=90");
+        url("infinity-relay.jpg");
 }
 
 .small {
@@ -314,15 +314,19 @@ footer p {
 @media (max-width: 700px) {
 
     .navbar {
-        padding: 22px 20px;
+        padding: 20px;
+    }
+
+    .navbar.scrolled {
+        padding: 15px 20px;
     }
 
     nav {
-        gap: 12px;
+        gap: 10px;
     }
 
     nav a {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .hero,
