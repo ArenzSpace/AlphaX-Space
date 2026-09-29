@@ -267,6 +267,27 @@ footer p {
 }
 
 
+/* FOOTER LINKS */
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.footer-links a:hover {
+    opacity: 0.5;
+}
+
+
 /* MOBILE */
 
 @media (max-width: 700px) {
