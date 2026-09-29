@@ -1,46 +1,57 @@
-// AlphaX Space
-// Main website JavaScript
+// AlphaX Space Website
 
-console.log("AlphaX Space website loaded.");
+const navbar = document.querySelector(".navbar");
 
 
-// Fade sections in when scrolling
+// NAVBAR SCROLL EFFECT
 
-const sections = document.querySelectorAll(
-    ".section"
-);
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 50) {
+
+        navbar.classList.add("scrolled");
+
+    } else {
+
+        navbar.classList.remove("scrolled");
+
+    }
+
+});
+
+
+// SECTION REVEAL
+
+const sections = document.querySelectorAll(".section");
 
 const observer = new IntersectionObserver(
+
     (entries) => {
 
         entries.forEach((entry) => {
 
             if (entry.isIntersecting) {
 
-                entry.target.style.opacity = "1";
-                entry.target.style.transform =
-                    "translateY(0)";
+                entry.target.classList.add("visible");
 
             }
 
         });
 
     },
+
     {
         threshold: 0.15
     }
+
 );
 
 
 sections.forEach((section) => {
 
-    section.style.opacity = "0";
-    section.style.transform =
-        "translateY(30px)";
-
-    section.style.transition =
-        "opacity 0.8s ease, transform 0.8s ease";
-
     observer.observe(section);
 
 });
+
+
+console.log("AlphaX Space loaded.");
