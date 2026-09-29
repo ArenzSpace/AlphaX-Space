@@ -36,6 +36,15 @@ body {
         rgba(0,0,0,0.55),
         transparent
     );
+    transition: background 0.3s ease,
+            padding 0.3s ease;
+}
+
+/* NAVBAR AFTER SCROLL */
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 18px 50px;
 }
 
 .logo {
@@ -79,6 +88,18 @@ nav a:hover {
     align-items: flex-end;
 
     padding: 100px 8%;
+
+    opacity: 0;
+transform: translateY(30px);
+
+transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
