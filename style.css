@@ -85,13 +85,15 @@ nav a:hover {
 /* HERO */
 
 .hero {
+    min-height: 100vh;
+
     background:
         linear-gradient(
             to top,
             rgba(0,0,0,0.85),
             rgba(0,0,0,0.15)
         ),
-        url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=2400&q=90");
+        url("elysium.jpg");
 
     background-size: cover;
     background-position: center;
