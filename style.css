@@ -191,6 +191,9 @@ h1 {
             rgba(0,0,0,0.2)
         ),
         url("elysium.jpg");
+
+    background-size: cover;
+    background-position: center;
 }
 
 
